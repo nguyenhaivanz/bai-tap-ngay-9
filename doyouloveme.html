@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #no {
+    position: absolute;
+    }
+    </style>
+<body>
+<form >
+  <p> <b>Do you love me?</b></p>
+  <button id="yes" name="yes" onclick="alert('yêu tất cả các chị')">yes</button>
+  <button id="no" name="no" onmouseover="chay()">no</button>
+    <script>
+        function chay() {
+            posX = Math.random()*screen.width;
+            posY = Math.random()*screen.height;
+            document.getElementById("no").style.left = posX + "px";
+            document.getElementById("no").style.top = posY +"px";
+        }
+    </script>
+</form>
+</body>
+</html>
